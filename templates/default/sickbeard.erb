@@ -1,0 +1,27 @@
+# MANAGED BY PUPPET!
+# modules/sickbeard/templates/default/subsonic.erb
+# Changes WILL BE overwritten! Any permanent changes must be checked
+# into git.
+
+## The defaults
+# Run as username
+RUN_AS="<%= scope.lookupvar('sickbeard::user') %>"
+
+# Path to app SB_HOME=path_to_app_SickBeard.py
+SB_HOME="<%= scope.lookupvar('sickbeard::path') %>"
+
+# Data directory where sickbeard.db, cache and logs are stored
+SB_DATA="<%= scope.lookupvar('sickbeard::data_dir') %>"
+
+# Path to store PID file
+# PID_FILE=
+
+# path to python bin
+# DAEMON=
+
+# Extra daemon option like: SB_OPTS=" --config=/home/sickbeard/config.ini"
+# EXTRA_DAEMON_OPTS=
+
+# Extra start-stop-daemon option like START_OPTS=" --group=users"
+# EXTRA_SSD_OPTS=
+##

@@ -1,0 +1,11 @@
+# MANAGED BY PUPPET!
+# modules/sickbeard/templates/nginx_vhost.erb
+# Changes WILL BE overwritten! Any permanent changes must be checked
+# into git.
+
+location /sickbeard {
+	include deny.conf;
+	include proxy.conf;
+
+	proxy_pass http://localhost:8081;
+}
