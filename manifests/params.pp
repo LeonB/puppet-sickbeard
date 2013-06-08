@@ -14,15 +14,15 @@
 #
 class sickbeard::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$path = $::operatingsystem ? {
-		default => '/usr/share/sickbeard'
-	}
+  $path = $::operatingsystem ? {
+    default => '/usr/share/sickbeard'
+  }
 
-    $user     = 'sickbeard'
-    $data_dir = '/var/lib/sickbeard'
+  $user   = 'sickbeard'
+  $data_dir = '/var/lib/sickbeard'
 
-	$enabled = true
+  $enabled = true
 
 }
