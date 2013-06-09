@@ -16,7 +16,7 @@ class sickbeard::config {
     }
 
     nginx::vhost::snippet { 'sickbeard':
-      ensure  => $sickbeard::ensure
+      ensure  => $sickbeard::ensure,
       vhost   => 'default',
       content => template('sickbeard/nginx_vhost.erb'),
     }
